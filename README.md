@@ -8,7 +8,7 @@ The whole thing was made in the most simple way possible, and currenlty is in ea
 ## How does it work?
 Game Server dumps player locations in a log files, then Voice Chat Server grabs that data and shares it among the connected players who are in the same location.
 
-On the client-side it's basicaly a tab in a browser that handles all the audio streaming, while players can mute and unmute themself direclty from the game (thanks to the new NUI support)
+On the client-side it's basicaly a tab in a browser that handles all the audio streaming, while players can mute and unmute themselves direclty from the game (thanks to the new NUI support)
 
 
 ## Technologies used
@@ -19,7 +19,7 @@ Websockets (with socket.io), WebRTC (with peer.js), Three.js (for proximity soun
 
 1. Install `node` and `npm` for your OS
 2. git clone this repository
-3. Put absolute path to your server's log.0 firectory in server/config.json
+3. Put absolute path to your server's log.0 directory in server/config.json
 4. Generate certificates (or use letsencrypt if you have a domain name)
 ```
 cd server/cert && chmod +x generate-certificates && ./generate-certificates.sh
