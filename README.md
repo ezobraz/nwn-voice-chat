@@ -20,7 +20,7 @@ Websockets (with socket.io), WebRTC (with peer.js), Three.js (for proximity soun
 1. Install `node` and `npm` for your OS
 2. git clone this repository
 3. Put absolute path to your server's log.0 firectory in server/config.json
-4. Generate certificates (or use letsencrypt if you have domain name)
+4. Generate certificates (or use letsencrypt if you have a domain name)
 ```
 cd server/cert && chmod +x generate-certificates && ./generate-certificates.sh
 ```
