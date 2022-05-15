@@ -1,0 +1,150 @@
+@color-primary: rgba(196, 159, 106, 1);
+@color-secondary: rgba(128, 94, 54, 1);
+@bg-color-orimary: linear-gradient(90deg, @color-secondary 0%, @color-primary 50%, rgba(240,192,132,1) 100%);
+@border-raduis: 2px;
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+}
+
+.error-box {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid red;
+    padding: 10px;
+    margin: auto;
+    border-radius: @border-raduis;
+    font-size: 14pt;
+}
+
+.form {
+    width: 80vw;
+    max-width: 320px;
+    margin: auto;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 2px solid @color-secondary;
+
+    h1 {
+        margin: 0;
+        font-size: 14pt;
+        font-weight: normal;
+        padding: 5px 10px;
+        border-bottom: 1px solid @color-secondary;
+    }
+
+    .input-group {
+        display: flex;
+        gap: 10px;
+        margin: 20px;
+
+        .pin {
+            flex: 1 1 40%;
+            height: 60px;
+            background: #000;
+            background: @color-secondary;
+            padding: 2px;
+            min-width: 100px;
+            border-radius: @border-raduis;
+            transition: box-shadow .3s;
+
+            input {
+                background: #000;
+                height: 100%;
+                width: 100%;
+                border: none;
+                border-radius: @border-raduis;
+                color: #fff;
+                font-size: 22pt;
+                padding: 0 10px;
+            }
+        }
+
+        button {
+            flex: 1 1 60%;
+            background: #000;
+            color: #fff;
+            font-size: 22pt;
+            cursor: pointer;
+            background: @bg-color-orimary;
+            border: none;
+            border-radius: @border-raduis;
+            position: relative;
+            height: 60px;
+
+            > * {
+                position: absolute;
+                display: block;
+                left: 2px;
+                top: 2px;
+                right: 2px;
+                bottom: 2px;
+                background: #000;
+                border-radius: @border-raduis;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &:hover {
+                > * {
+                    box-shadow: inset 0px 0px 0px 2px #000, inset 0px 0px 0px 4px @color-secondary;
+                }
+            }
+        }
+    }
+}
+
+.connected {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .mic-status {
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 100%;
+        box-shadow: 0 0 100px red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            height: 60%;
+        }
+
+        &.muted {
+            box-shadow: 0 0 100px #fff;
+            background: #fff;
+
+            svg {
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
