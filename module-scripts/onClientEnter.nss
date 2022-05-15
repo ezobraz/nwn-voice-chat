@@ -1,7 +1,7 @@
 #include "nw_inc_nui"
 #include "nw_inc_nui_insp"
 
-string VC_URL = "localhost:3000"
+string VC_URL = "localhost:3000";
 
 string GeneratePin() {
     int p1 = Random(9);
