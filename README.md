@@ -36,7 +36,7 @@ npm run start
 - Join the server that has this voice chat plugin installed
 - Notice the floating "Voice chat" window
 - `Alt+Tab` and open a new firefox/safari/etc tab with the url you saw in the floating window
-- Enter the 4 digit pin number you was in the floating window
+- Enter the 4 digit pin number you saw in the floating window
 - Return to the game and press "On" button so others could hear you
 
 It will not work in Chrome or any Chrome-based browsers like Brave, Edge, etc. Use Firefox.
