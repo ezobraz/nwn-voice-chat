@@ -1,5 +1,7 @@
 # Proximity (3D) Voice Chat for NWN1
 
+<img width="314" alt="Screenshot 2022-05-15 at 15 37 34" src="https://user-images.githubusercontent.com/14362460/168475745-4f6b440d-48a1-429e-8b41-79966906e011.png">
+
 ## Disclaimer
 The whole thing was made in the most simple way possible, and currenlty is in early "alpha", so expect some bugs.
 
