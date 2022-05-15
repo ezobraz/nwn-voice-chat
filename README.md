@@ -1,7 +1,7 @@
 # Proximity (3D) Voice Chat for NWN1
 
 ## Disclaimer
-The whole thing was done in the most simple way possible, and currenlty is in early "alpha", so expect some bugs.
+The whole thing was made in the most simple way possible, and currenlty is in early "alpha", so expect some bugs.
 
 ## How does it work?
 Game Server dumps player locations in a log files, then Voice Chat Server grabs that data and shares it among the connected players who are in the same location.
