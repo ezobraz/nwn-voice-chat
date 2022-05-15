@@ -16,16 +16,17 @@ Websockets (with socket.io), WebRTC (with peer.js), Three.js (for proximity soun
 ## For server administrators
 
 1. Install `node` and `npm` for your OS
-1. git clone this repository
-2. Put absolute path to your server's log.0 firectory in server/config.json
-3. Generate certificates
+2. git clone this repository
+3. Put absolute path to your server's log.0 firectory in server/config.json
+4. Generate certificates (or use letsencrypt if you have domain name)
 ```
 cd server/cert && chmod +x generate-certificates && ./generate-certificates.sh
 ```
-4. Create/Edit your module and add scripts from module-scrips folder to your module
-5. Attach `onClientEnter` and `onClientLeave` scripts to their respective events
-6. Inside `onClientEnter` script, change `VC_URL` to your domain or server ip with 3000 port. It will be shown to players
-7. Build and launch voice-chat server
+5. Create/Edit your module and add scripts from module-scrips folder to your module
+6. Attach `onClientEnter` and `onClientLeave` scripts to their respective events
+7. Inside `onClientEnter` script, change `VC_URL` to your domain or server ip with 3000 port. It will be shown to players
+8. Run the Game Server with your module
+9. Build and launch the Voice Chat Server
 ```
 cd server
 npm i
