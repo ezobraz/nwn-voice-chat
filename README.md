@@ -15,6 +15,7 @@ Websockets (with socket.io), WebRTC (with peer.js), Three.js (for proximity soun
 
 ## For server administrators
 
+1. Install `node` and `npm` for your OS
 1. git clone this repository
 2. Put absolute path to your server's log.0 firectory in server/config.json
 3. Generate certificates
@@ -27,6 +28,7 @@ cd server/cert && chmod +x generate-certificates && ./generate-certificates.sh
 7. Build and launch voice-chat server
 ```
 cd server
+npm i
 npm run build
 npm run start
 ```
